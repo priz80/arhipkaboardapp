@@ -20,36 +20,30 @@ const LoadingFallback = () => (
   </div>
 );
 
-const basename =
-  process.env.NODE_ENV === "production" ? "/boardposterapp" : "/";
-
-const router = createBrowserRouter(
-  [
-    {
-      path: "/",
-      element: <Layout />,
-      children: [
-        {
-          path: "/",
-          element: (
-            <Suspense fallback={<LoadingFallback />}>
-              <Home />
-            </Suspense>
-          ),
-        },
-        {
-          path: "/product/:id",
-          element: (
-            <Suspense fallback={<LoadingFallback />}>
-              <Product />
-            </Suspense>
-          ),
-        },
-      ],
-    },
-  ],
-  { basename }
-);
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Layout />,
+    children: [
+      {
+        path: "/",
+        element: (
+          <Suspense fallback={<LoadingFallback />}>
+            <Home />
+          </Suspense>
+        ),
+      },
+      {
+        path: "/product/:id",
+        element: (
+          <Suspense fallback={<LoadingFallback />}>
+            <Product />
+          </Suspense>
+        ),
+      },
+    ],
+  },
+]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
