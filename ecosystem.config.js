@@ -1,7 +1,7 @@
 module.exports = {
   apps: [
     {
-      name: "boardposterapp",
+      name: "arhipkaboardapp",
       script: "./server/index.js",
       cwd: "/var/www/pagelist_ru_usr/data/www/pagelist.ru/arhipka",
       instances: 1,
