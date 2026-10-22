@@ -3,7 +3,7 @@ module.exports = {
     {
       name: "boardposterapp",
       script: "./server/index.js",
-      cwd: "/var/www/boardposterapp",
+      cwd: "/var/www/pagelist_ru_usr/data/www/pagelist.ru/arhipka",
       instances: 1,
       autorestart: true,
       watch: false,
@@ -12,8 +12,8 @@ module.exports = {
         NODE_ENV: "production",
         PORT: 3000
       },
-      error_file: "/var/www/boardposterapp/logs/error.log",
-      out_file: "/var/www/boardposterapp/logs/out.log",
+      error_file: "/var/www/pagelist_ru_usr/data/www/pagelist.ru/arhipka/logs/error.log",
+      out_file: "/var/www/pagelist_ru_usr/data/www/pagelist.ru/arhipka/logs/out.log",
       log_date_format: "YYYY-MM-DD HH:mm:ss"
     }
   ]

@@ -7,7 +7,7 @@
 echo "🚀 Начинаю деплой..."
 
 # Переходим в папку проекта
-cd /var/www/boardposterapp
+cd /var/www/pagelist_ru_usr/data/www/pagelist.ru/arhipka
 
 # Забираем последние изменения
 echo "📥 Забираем изменения из Git..."
