@@ -7,7 +7,7 @@ export const Header = () => {
         <div className="header-box">
           <a href={`${process.env.PUBLIC_URL}/`} className="header-logo">
             <img src={`${process.env.PUBLIC_URL}/image/logo.svg`} alt="logo" />
-            <span>MyAvito</span>
+            <span>Архипка маркет</span>
           </a>
           <div className="header-control">
             <button className="btn btn-outline">Вход регистрация</button>
