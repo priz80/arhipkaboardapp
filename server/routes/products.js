@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const { cardArray } = require("../../src/constants");
+const { cardArray } = require("../data/products");
 
 // Получить все товары
 router.get("/", (req, res) => {
